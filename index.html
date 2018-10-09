@@ -10,14 +10,14 @@
 </head>
 <header>
     <div class="bgheader">
-        <div class="menu">
-                <div class="topnav">
-                    <img class="logo" src="images/ACS Logo.png" alt="logo acs"/>
-                    <a href="#accueil" ACCUEIL></a>
-                    <a href="#laformation" LAFORMATION></a>
-                    <a href="#actualite" ACTUALITÉ></a>
-                    <a href="#contact" CONTACT></a>
-                    <a href="#inscription" INSCRIPTION></a>
+        <!-- <img class="logo" src="images/ACS Logo.png" alt="logo acs"/> -->
+            <ul>
+                <li><a href="#accueil" ACCUEIL></a></li>
+                <li><a href="#laformation" LAFORMATION></a></li>
+                <li><a href="#actualite" ACTUALITÉ></a></li>
+                <li><a href="#contact" CONTACT></a></li>
+                <li><a href="#inscription" INSCRIPTION></a></li>
+            </ul>
             </div>
         </div>
         <div class="texteaccroche">
@@ -133,15 +133,18 @@
 
         <div class="contact">
             <h2>CONTACT</h2>
-                <div class="nom">
-                    <p>NOM *</p>
-                </div>
-                <div class="prenom">
-                    <p>PRÉNOM *</p>
-                </div>
-                <div class="email">
-                    <p>EMAIL *</p>
-                </div>
+            <div>
+                <label for="name">NOM *</label>
+                <input type="text" id="name" name="user_name" />
+            </div>
+                <label for="prenom">PRÉNOM *</label>
+                <input type="text" id="prenom" name="user_firstname" /> 
+            </div>
+            <div>
+                <label for="mail">EMAIL *</label>
+                <input type="email" id="mail" name="user_email" />
+            </div>
+
                 <div class="cp">
                     <p>CODE POSTAL *</p>
                 </div>
