@@ -1,0 +1,110 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+div {
+    display: inline-block;
+    padding:0px;
+    margin:0px;
+}
+body {
+    text-align: center;
+    background-color: white;
+    /* display: flex;
+    flex-direction: column; */
+    }
+.bgheader {
+    background-image: url("../images/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin : 0 auto;
+    height: 1080px;
+    width: auto;
+    overflow: hidden;
+}
+.menu {
+    /* position: absolute; */
+    margin: 0px;
+    width: auto;
+}
+.topnav {
+    background-color: grey;
+    border-bottom-color: white;
+    border-bottom-width: 1px;
+    overflow: hidden;
+    padding-left: 450px;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 20 px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.texteaccroche {
+    color: white;
+    text-align: center;
+}
+.gen {
+    height: 481px;
+    background-color: white;
+
+}
+.enseignement {
+    height: 445px;
+    background-image: url("../images/projet-collaboratif-bg.png");
+    color: white;
+
+}
+.metiers {
+    height: 577px;
+    background-color: #3e3e3e;
+    color: white;
+
+}
+.sonProjet {
+    height: 453px;
+    background-color: white;
+
+}
+.titreIII {
+    height: 300px;
+    background-image: url("../images/projet-bg1.png");
+    color: white;
+
+}
+.centres {
+    height: 841px;
+    background-color: white;
+
+}
+.temoignages {
+    height: 605px;
+    background-image: url("../images/temoignages-bg.png");
+    color: white;
+
+}
+.contact {
+    height: 800px;
+    background-color: #9c0021;
+    color: white;
+
+}
+.imgcontainer {
+    height: 250px;
+    background-color: white;
+}
+.imgcontainer img {
+    max-height: 200px;
+}
+footer {
+    height: 155px;
+    background-color: #3e3e3e;
+    color: white;
+
+}
