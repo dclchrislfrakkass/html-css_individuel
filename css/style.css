@@ -96,11 +96,16 @@ body {
 
 }
 .imgcontainer {
-    height: 250px;
+    max-height: 250px;
     background-color: white;
 }
 .imgcontainer img {
-    max-height: 200px;
+    max-height: 150px;
+    max-width: 250px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 }
 footer {
     height: 155px;
