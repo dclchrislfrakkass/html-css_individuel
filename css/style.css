@@ -2,107 +2,150 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 body div {
-    padding:0px;
     margin:0px;
+    padding:0px;
 }
 body {
-    text-align: center;
     background-color: white; 
+    text-align: center;
 }
-.bg {
+
+header {
     background-image: url(../images/header.png);
     background-repeat: no-repeat;
     height: 1080px;
 }
-.texteaccroche {
-    text-align: center;
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    color: white;
+nav {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    flex-direction: row;
+    height: auto;
+    border-bottom: 1px solid white;
+}
+.logo {
+    padding-left: 360px;
+    padding-top: 3px;
+    max-height: 50px;
+    max-width: auto;
+
 }
 ul {
+    margin: 0px;
+    padding-right: 360px;
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    justify-content: space-around;
+    padding: 0; 
     overflow: hidden;
-    background-color: #333;
 }
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
+ul a {
+    margin-left: 10px;
+    display:block;
     text-align: center;
-    padding: 14px 16px;
+    padding-right: 300px;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
+li a {
+    color: white;
+    display: block;
+    padding: 20px 20px;
+    text-align: center;
     text-decoration: none;
 }
 li a:hover {
     background-color: #111;
 }
+
+.texteaccroche {
+    line-height: 1080px;
+    color: white;
+    left: 30%;
+    text-align: center;
+}
+.texteaccroche h2 {
+    padding: 0px 30px;
+    display: inline;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: normal;
+}
+.btnplus {
+    display: flex;
+    : center;
+    width: 150px;
+    height: 50px;
+    padding: 7px 7px; 
+    background: #d51e44; 
+    color: white; 
+}/*
+.btnplus a:hover {
+        background: red; 
+}*/
 .gen {
-    height: 481px;
     background-color: white;
+    height: 481px;
 
 }
 .enseignement {
-    height: 445px;
     background-image: url("../images/projet-collaboratif-bg.png");
     color: white;
+    height: 445px;
 
 }
 .metiers {
-    height: 577px;
     background-color: #3e3e3e;
     color: white;
+    height: 577px;
 
 }
 .sonProjet {
-    height: 453px;
     background-color: white;
+    height: 453px;
 
 }
 .titreIII {
-    height: 300px;
     background-image: url("../images/projet-bg1.png");
     color: white;
+    height: 300px;
 
 }
 .centres {
-    height: 841px;
     background-color: white;
+    height: 841px;
 
 }
 .temoignages {
-    height: 605px;
     background-image: url("../images/temoignages-bg.png");
     color: white;
+    height: 605px;
 
 }
 .contact {
-    height: 800px;
     background-color: #9c0021;
     color: white;
+    height: 800px;
 
 }
 .imgcontainer {
-    max-height: 250px;
     background-color: white;
+    max-height: 250px;
 }
 .imgcontainer img {
     max-height: 150px;
     max-width: 250px;
+    padding-bottom: 50px;
     padding-right: 50px;
     padding-top: 50px;
-    padding-bottom: 50px;
     
 }
 footer {
-    height: 155px;
     background-color: #3e3e3e;
     color: white;
+    height: 155px;
 
 }
