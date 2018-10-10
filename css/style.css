@@ -1,6 +1,10 @@
 html {
     font-family: 'Open Sans', sans-serif;
 }
+a {
+    color: white;
+    text-decoration: none;
+}
 body div {
     margin:0px;
     padding:0px;
@@ -13,26 +17,25 @@ body {
 header {
     background-image: url(../images/header.png);
     background-repeat: no-repeat;
-    height: 1080px;
+    height: 900px;
 }
 nav {
     display: flex;
     background-color: rgba(0, 0, 0, 0.3);
     justify-content: space-between;
     flex-direction: row;
-    height: auto;
+    height: 90px;
     border-bottom: 1px solid white;
 }
 .logo {
     padding-left: 360px;
-    padding-top: 3px;
-    max-height: 50px;
+    padding-top: 20px;
+    max-height: 40px;
     max-width: auto;
-
 }
 ul {
     margin: 0px;
-    padding-right: 360px;
+    margin-right: 360px;
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -41,95 +44,124 @@ ul {
     overflow: hidden;
 }
 ul a {
-    margin-left: 10px;
+    margin-left: 5px;
     display:block;
     text-align: center;
-    padding-right: 300px;
 }
 li{
     display: flex;
     flex-direction: row;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 li a {
     color: white;
     display: block;
-    padding: 20px 20px;
+    padding: 30px 10px;
     text-align: center;
     text-decoration: none;
 }
 li a:hover {
-    background-color: #111;
+    background-color: #d51e44;
 }
-
 .texteaccroche {
-    line-height: 1080px;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
     color: white;
-    left: 30%;
-    text-align: center;
 }
 .texteaccroche h2 {
-    padding: 0px 30px;
     display: inline;
+    padding: 8px 40px;
     background-color: rgba(255, 255, 255, 0.1);
     font-weight: normal;
 }
-.btnplus {
-    display: flex;
-    : center;
+.texteaccroche a {
     width: 150px;
-    height: 50px;
-    padding: 7px 7px; 
+    height: 40px;
+    padding-top: 15px;
     background: #d51e44; 
-    color: white; 
-}/*
-.btnplus a:hover {
-        background: red; 
-}*/
+}
 .gen {
+    display: fixed;
+    padding-top: 30px;
     background-color: white;
     height: 481px;
-
+}
+.logogen {
+    margin-top: 0px;
+}
+.genS {
+    margin-left: 360px;
+    margin-left: 360px;
+    display:flex;
+    height: 200px;
+    /* width: 500px;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0,5px; */
+}
+.gen h1 {
+    font-weight: bolder;
+}
+.genS img {
+    display: flex;
+    height : max-content;
+}
+.genS ul {
+    margin: 0px;
+    margin-right: 360px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0; 
+    overflow: hidden;
+}
+.formtxt02 li::before {
+    content : url(../images/Ellipse\ 1.png);
 }
 .enseignement {
     background-image: url("../images/projet-collaboratif-bg.png");
     color: white;
     height: 445px;
-
+    
 }
 .metiers {
     background-color: #3e3e3e;
     color: white;
     height: 577px;
-
+    
 }
 .sonProjet {
     background-color: white;
     height: 453px;
-
+    
 }
 .titreIII {
     background-image: url("../images/projet-bg1.png");
     color: white;
     height: 300px;
-
+    
 }
 .centres {
     background-color: white;
     height: 841px;
-
+    
 }
 .temoignages {
     background-image: url("../images/temoignages-bg.png");
     color: white;
     height: 605px;
-
+    
 }
 .contact {
     background-color: #9c0021;
     color: white;
     height: 800px;
-
+    
 }
 .imgcontainer {
     background-color: white;
@@ -147,5 +179,5 @@ footer {
     background-color: #3e3e3e;
     color: white;
     height: 155px;
-
+    
 }
