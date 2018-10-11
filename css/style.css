@@ -5,6 +5,16 @@ a {
     color: white;
     text-decoration: none;
 }
+.button {
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 body div {
     margin:0px;
     padding:0px;
@@ -93,15 +103,10 @@ li a:hover {
     margin-top: 0px;
 }
 .genS {
-    margin-left: 360px;
-    margin-left: 360px;
+    margin-left: 260px;
+    margin-left: 260px;
     display:flex;
     height: 200px;
-    /* width: 500px;
-    text-align: center;
-    align-items: center;
-    flex-direction: row;
-    margin: 0,5px; */
 }
 .gen h1 {
     font-weight: bolder;
@@ -111,51 +116,156 @@ li a:hover {
     height : max-content;
 }
 .genS ul {
-    margin: 0px;
-    margin-right: 360px;
     display: flex;
     flex-direction: column;
-    list-style-type: none;
     justify-content: space-around;
-    padding: 0; 
+    list-style-type: none;
+    margin: 0px;
+    margin-right: 360px;
     overflow: hidden;
+    padding: 0; 
 }
 .formtxt02 li::before {
     content : url(../images/Ellipse\ 1.png);
 }
 .enseignement {
     background-image: url("../images/projet-collaboratif-bg.png");
+    background-repeat: no-repeat;
     color: white;
-    height: 445px;
+    height: 425px;
+    padding-top: 20px;
+}
+.icones {
+    display: flex;
+    justify-content: center;
     
+}
+.icones [class*="bloc"] {
+    padding-top: 50px;
+    width: 200px;
+    font-size: 90%;
+    margin-left: 20px;
+    max-height: 170px;
+    text-align: center justify;
 }
 .metiers {
     background-color: #3e3e3e;
     color: white;
+    display: flex;
     height: 577px;
-    
+    justify-content: center;
+}
+.metiers [class*="bloc"] {
+    padding-top: 50px;
+    justify-content: center;
+    height: 460px;
+    width: 600px;
+    text-align:left;
+}
+.metiers p {
+    font-size: 15px;
+}
+.metiers .button {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #white;
+    width : 200px;
 }
 .sonProjet {
     background-color: white;
+    display: flex;
+    justify-content: left;
     height: 453px;
+    padding-top: 75px;
+    margin-bottom: 0px;
     
+}
+.sonProjet img {
+    padding-left: 50px;
+    width: 600px;
+    height: 306px;
+    padding-right: 50px;
+}
+.sonProjet .trait{
+    width: 150px;
+    height: 3px;
+}
+.sonProjet .bloc{
+    width: 600px;
+    text-align: left;
+}
+.sonProjet ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0; 
+}
+.sonProjet li::before {
+    content : url(../images/Ellipse\ 1.png);
 }
 .titreIII {
     background-image: url("../images/projet-bg1.png");
     color: white;
     height: 300px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 360px;
+    padding-right: 360px;
+    font-size: 28px;
+}
+.titreIII strong{
+    font-weight: bolder;
 }
 .centres {
     background-color: white;
     height: 841px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+.lieux {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 260px;
     
+}
+.lieux [class*="v"] {
+    height: 275px;
+    width: 250px;
+    align-content: space-around;
+    padding: 1%;
 }
 .temoignages {
     background-image: url("../images/temoignages-bg.png");
     color: white;
+    display: flex;
     height: 605px;
-    
+    text-align: left;
+    padding-left: 260px;
+    padding-right: 260px;
+    line-height: 30px;    
+}
+.temoignages .text {
+    width: 1200px;
+    height: 480px;
+}
+.temoignages .entete {
+    padding-top: 30px;
+    display:flex;
+    justify-content: space-between;
+}
+.temoignages .button {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #white;
+    width : 200px;
 }
 .contact {
     background-color: #9c0021;
@@ -172,8 +282,18 @@ li a:hover {
     max-width: 250px;
     padding-bottom: 50px;
     padding-right: 50px;
-    padding-top: 50px;
-    
+    padding-top: 50px;    
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
 }
 footer {
     background-color: #3e3e3e;
