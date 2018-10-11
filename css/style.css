@@ -143,7 +143,6 @@ li a:hover {
 .icones [class*="bloc"] {
     padding-top: 50px;
     width: 200px;
-    font-size: 90%;
     margin-left: 20px;
     max-height: 170px;
     text-align: center justify;
@@ -163,7 +162,7 @@ li a:hover {
     text-align:left;
 }
 .metiers p {
-    font-size: 15px;
+    font-size: 18px;
 }
 .metiers .button {
     border-width: 2px;
@@ -176,17 +175,19 @@ li a:hover {
     display: flex;
     justify-content: left;
     height: 453px;
-    padding-top: 75px;
+    padding-top: 70px;
     margin-bottom: 0px;
     
 }
 .sonProjet img {
-    padding-left: 50px;
+    padding-left: 360px;
     width: 600px;
     height: 306px;
     padding-right: 50px;
+    padding-top: 30px;
 }
 .sonProjet .trait{
+    padding: 0px;
     width: 150px;
     height: 3px;
 }
@@ -201,6 +202,7 @@ li a:hover {
     margin: 0px;
     overflow: hidden;
     padding: 0; 
+    line-height: 24px;
 }
 .sonProjet li::before {
     content : url(../images/Ellipse\ 1.png);
@@ -214,7 +216,7 @@ li a:hover {
     justify-content: center;
     padding-left: 360px;
     padding-right: 360px;
-    font-size: 28px;
+    font-size: 40px;
 }
 .titreIII strong{
     font-weight: bolder;
@@ -227,13 +229,39 @@ li a:hover {
     flex-direction: column;
     padding: 0px;
     margin: 0px;
+ }
+/* .lieux image {
+    opacity: 1;
+    display:block;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
-
+.lieux .middle {
+    transition: .5s ease;
+    opacity: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.lieux:hover .image {
+    opacity: 0.3;
+}
+.lieux:hover .middle {
+    opacity: 1;
+}
+.lieux .nom {
+    background-color: #d51e44;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+} */ 
 .lieux {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 260px;
+    padding-left: 360px;
+    padding-right: 360px;
     
 }
 .lieux [class*="v"] {
@@ -248,8 +276,8 @@ li a:hover {
     display: flex;
     height: 605px;
     text-align: left;
-    padding-left: 260px;
-    padding-right: 260px;
+    padding-left: 360px;
+    padding-right: 360px;
     line-height: 30px;    
 }
 .temoignages .text {
@@ -271,29 +299,70 @@ li a:hover {
     background-color: #9c0021;
     color: white;
     height: 800px;
-    
+    display: flex;
+    flex-direction: column;     
+}
+.contact h2 {
+    padding-left: 360px;
+}
+.contact .box {
+    display: flex;
+    flex-direction: row;
+    /* align-content: center; */
+}
+.contact h2 {
+    text-align:left;
+}
+.contact .form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 360px;
+    width: 600px;
+}
+.contact .box {
+    display: flex;
+    flex-direction: row;
+}
+.contact input{
+    background: #9c0021;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+.contact .contacttxt {
+    padding-right: 360px;
+    width: 600px;
+    margin-top: 50px;
+}
+
+textarea {
+    width: 60%;
+    height: 200px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background-color: #9c0021;
+    font-size: 16px;
+    resize: none;
+    color: white;
 }
 .imgcontainer {
     background-color: white;
     max-height: 250px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+    padding-left: 30px;
+    justify-content: space-around;
 }
 .imgcontainer img {
     max-height: 150px;
     max-width: 250px;
     padding-bottom: 50px;
     padding-right: 50px;
-    padding-top: 50px;    
-}
-textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    resize: none;
+    padding-top: 50px;
 }
 footer {
     background-color: #3e3e3e;
