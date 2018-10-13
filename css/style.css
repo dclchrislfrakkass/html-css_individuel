@@ -229,47 +229,38 @@ li a:hover {
     flex-direction: column;
     padding: 0px;
     margin: 0px;
- }
-/* .lieux image {
-    opacity: 1;
-    display:block;
-    transition: .5s ease;
-    backface-visibility: hidden;
 }
-.lieux .middle {
-    transition: .5s ease;
-    opacity: 0px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.lieux:hover .image {
-    opacity: 0.3;
-}
-.lieux:hover .middle {
-    opacity: 1;
-}
-.lieux .nom {
-    background-color: #d51e44;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-} */ 
 .lieux {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: 360px;
     padding-right: 360px;
-    
-}
+} 
 .lieux [class*="v"] {
     height: 275px;
     width: 250px;
     align-content: space-around;
-    padding: 1%;
+    padding: 20px;
+    position: relative;
 }
+.v .overlay {
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    height: 75%;
+    width: 81%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #d51e44;
+}
+.v:hover .overlay {
+    opacity: 0.5;
+}
+
 .temoignages {
     background-image: url("../images/temoignages-bg.png");
     color: white;
@@ -278,14 +269,23 @@ li a:hover {
     text-align: left;
     padding-left: 360px;
     padding-right: 360px;
- }
- .temoignages p{
+}
+.tem {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.temoignages p{
     line-height: 30px;
- }
- .quote {
-     text-align: right;
- }
-.temoignages .text {
+}
+.quote {
+    text-align: right;
+}
+.temoignages .tem {
     width: 1200px;
     height: 480px;
 }
@@ -321,9 +321,9 @@ li a:hover {
     display: flex;
     flex-direction: column;
     padding-left: 360px;
-    width: 600px;
+    min-width: 600px;
     text-align: left;
-    line-height: 40px;
+    line-height: 45px;
 }
 .contact .box {
     display: flex;
@@ -335,6 +335,13 @@ li a:hover {
     border-left: none;
     border-right: none;
     max-width: 600px;
+    min-width: 280px;
+}
+.contact input[type="email"] {
+    min-width: 565px;
+}
+.contact ::placeholder {
+    color: white;
 }
 .contact .contacttxt {
     padding-right: 360px;
@@ -382,5 +389,5 @@ footer {
     padding-top: 60px;    
 }
 .reseaux img{
-     padding-left: 40px;
+    padding-left: 40px;
 }
